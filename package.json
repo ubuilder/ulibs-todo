@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "DEV_MODE=true nodemon --ignore './db.json' app.js"
   },
+  "type": "module",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@ulibs/db": "^1.0.1-next.19",
+    "@ulibs/router": "^0.0.27",
+    "@ulibs/ui": "^0.0.2-next.54",
+    "dotenv": "^16.3.1",
+    "recursive-readdir": "^2.2.3"
+  }
 }
