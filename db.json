@@ -1,3 +1,1 @@
-{
-  "todos": [{"todo": "something", "completed": false},{"todo": "something", "completed": false}]
-}
+{"todos":[{"id":"ec0dcf83-df2b-4350-ba93-e5799aaac72f","todo":"XFS","completed":true},{"id":"6eea8fc0-29a4-4574-8e9e-e27b56d8eacc","todo":"skldjlksjlkdj","completed":false},{"id":"f09e1791-54b9-48fb-9695-37754626e88c","todo":"kjhkjh","completed":false},{"id":"99445d37-9f93-4d48-822c-3993bb79bf2b","todo":"some","completed":false},{"id":"80416aa5-f34f-42f9-b0db-7ad338863ca6","todo":"some","completed":false},{"id":"2fe65411-c248-4686-bac5-fa1922766599","todo":",jlkjlkj","completed":false}]}
