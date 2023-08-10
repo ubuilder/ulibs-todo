@@ -84,12 +84,12 @@ export default ({ todos }) => {
             {
               $data: { todo: "", completed: false },
               align: "end",
-              onSubmit: `$post('?add_todo', {todo, completed}).then(a => location.reload())`,
+              onSubmit: `$post('?add_todo', {todo, completed})`,
             },
             [
               Input({ col: true, name: "todo", placeholder: "todo..." }),
               Col({ justify: "end" }, [
-                Button({ type: "submit", color: "primary" }, "Submit"),
+                Button({ type: "submit", color: "primary" }, "Add"),
               ]),
             ]
           ),
@@ -99,7 +99,6 @@ export default ({ todos }) => {
                 View({textColor: 'secondary'},todo.todo),
                 View({ d: "flex", ms: "auto" }, [
                   Checkbox({checked: todo.completed ,style: 'transform: scale(2)', alignSelf: 'center', mt: 'xs', onChange:`$post('?change_status',{id:'${todo.id}', completed: ${!todo.completed}}).then(a => navigation.reload())`}),
-                  Button({color: 'success'}, "edit"),
                   Button({color: 'error',
                   onClick:`$post('?delete_todos',{id:'${todo.id}'}).then(a => navigation.reload())`
                 },"delete"),
